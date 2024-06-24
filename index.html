@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validar Formulário</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="image/1.avif" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form method="post" class="validator">
+                <label for="">
+                    Nome: <br>
+                    <input type="text" name="name" data-rules="required|min=2">
+                </label>
+                <label for="">
+                    E-mail: <br>
+                    <input type="email" name="e-mail" data-rules="required|email">
+                </label>
+                <label for="">
+                    Senha: <br>
+                    <input type="password" name="password" data-rules="required|min=8">
+                </label>
+                <label>
+                    <input type="submit" value="Cadastrar">
+                </label>
+            </form>
+
+            <div class="jatenho">
+                Já tem uma conta? <a href="http://">Faça o login.</a>
+            </div>
+
+            <div class="consfinal"> ® Criado por <a href="https://github.com/LuanSalesx">LuanSalesx Dev</a></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
