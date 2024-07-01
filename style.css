@@ -63,3 +63,15 @@ h1{
 .consfinal a{
     color: white;
 }
+@media (max-width:900px) {
+    .leftside img {
+        width: 300px;
+    }
+    .screen{
+        display: block;
+
+    }
+    .rightside{
+        width:100%;
+    }
+}
